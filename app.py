@@ -1,11 +1,10 @@
 import streamlit as st
 
 # Page setup (title and icon you see in the browser tab)
-st.set_page_config(page_title="Adder", page_icon="➕", layout="centered")
+st.set_page_config(page_title="Age Calculator", page_icon="➕", layout="centered")
 
-st.title("Add Two Numbers")
+st.title("Age calculator")
 
-# A simple form so calculation runs only when you click the button
 with st.form("adder_form"):
     # Ask for the two numbers
     number1 = st.number_input("Number-1", value=0.0, step=1.0, format="%.6f")
